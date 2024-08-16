@@ -1,0 +1,94 @@
+@import "../../styles/variables/mixins";
+.sport-details {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  .sport-details-left {
+    width: 70%;
+    @media (max-width: 767px) {
+      width: 98%;
+      margin: 0 auto;        
+  }
+    // background: green;
+    .match-heading {
+      background-color: rgb(32, 50, 123);
+      padding: 0px 8px;
+      color: white;
+      width: calc(100% - 16px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      @media (max-width: 767px) {
+    flex-direction: column;    
+    justify-content: left;  
+    align-items: start;
+    padding: 6px 10px;
+ 
+    }
+      h1 {
+        font-size: 14px;
+        font-weight: 500;
+        @media (max-width: 767px) {
+         
+          padding: 0;
+          margin: 0;
+       
+          }
+      }
+      p {
+        font-size: 14px;
+        @media (max-width: 767px) {
+         
+          padding: 0;
+          margin: 0;
+       
+          }
+      }
+    }
+    .match-tv {
+      background: transparent;
+      width: calc(100% - 12px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 6px;
+      color: #aaafb5;
+      margin: -7px 0px;
+      p {
+        font-size: 12px;
+      }
+      .match-tv-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 10px;
+        svg {
+          // color: blue;
+          font-size: 24px;
+        }
+      }
+      .togal-tv {
+        ap: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .sport-details-right {
+    width: 30%;
+
+    border-radius: 8px;
+
+    overflow: auto;
+    background-color: rgb(46, 52, 56);
+    @media (max-width: 767px) {
+    display: none;
+      
+  }
+  }
+}

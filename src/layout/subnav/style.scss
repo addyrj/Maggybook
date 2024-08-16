@@ -1,0 +1,224 @@
+@import "../../styles/variables/mixins";
+.sub-nav{
+    display: flex;
+    height: 35px;
+    background: #23292D;
+    // background: #1583cd;
+    padding: 10px 0;
+    position: sticky;
+    z-index: 999999999;
+    top: 0px;
+   color:  rgb(170, 175, 181);
+    // margin-top: 10px;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse; 
+      height: auto;
+      width: 100%;
+      background-color: rgb(23, 25, 28);
+      padding-bottom: 10px;
+      margin-top: 0%;
+    }
+
+    .logo-nav{
+        width: 20%;
+        height: 100%;
+        @media (max-width: 767px) {
+          display: none;
+            }
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+    .sub-col-left{
+        width: 80%;
+        display: flex;
+        background: #444444;
+        
+        @media (max-width: 767px) {
+        width: 95%;
+        border-radius: 5px;
+        margin: 0 2.5%;
+        padding: 5px 0;
+      
+            
+        }
+.marquee-sec{
+    width: 95%;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    margin: auto 0;
+}
+        .icon-speak{
+            width: 4%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .sub-col-right{
+        width: 20%;
+        padding: 0px 5px;
+        display: flex;
+        font-size: 14px;
+        gap: 2%;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            padding: 0px 0px;
+            width: 100%;
+                
+            }
+            .logo-menu{
+                display: none;
+                @media (max-width: 767px) {
+                    display: block;
+                    display: flex;
+                    flex-direction: row;
+                    // display: flex;
+                    gap: 5px;
+                    padding-left: 10px;
+                    // display: block;
+                    width: 50%;
+                         
+                    }
+                    .menu-icon{
+                        margin: auto 0;
+                        svg{
+
+                            font-size: 35px;
+                        }
+
+                    }
+                    .logo-icon{
+                        width: 100px;
+                        height: 30px;
+                        margin: auto 0;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            .pts-sec{
+                width: 100%;
+                display: flex;
+                
+                @media (max-width: 767px) {
+                    display: flex;
+                    width: 50%;
+                  
+                    gap: 3px;
+                    padding: 0px 10px;
+                    flex-direction: column;       
+                    }
+                    .pts{
+                        margin: auto 0;
+                        width: 40%;
+                        align-items: center;
+                        @media (max-width: 767px) {
+                        //    align-items: end;  
+                           width: 100%;
+                           font-size: 12px;
+                           text-align: end;   
+                            }
+                            p{
+                                margin: 0;
+                                padding: 0;
+                                
+                                span{
+                                    width: 40px;
+                                    &:first-child{
+                        
+                        padding-right: 5px;
+                        margin-right: 5px;
+                        border-right: 1px solid gray;
+                    }
+                }  
+            }
+        }
+        .demo{
+            
+            width: 60%;
+            margin: auto 0;
+            align-items: center;
+            @media (max-width: 767px) {
+             display: flex;
+             justify-content: end;
+                width: 100%;
+                font-size: 12px;
+                text-align: end;
+                 }
+            .demouser{
+                display: flex;
+                cursor: pointer;
+                @media (max-width: 767px) {
+                   width: 100%;
+                display: contents;  
+                    }
+                p{
+                        margin: 0;
+                        text-transform: uppercase;
+                padding: 0;
+                text-align: center;
+                display: flex;
+                &:first-child{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+                    color: rgb(35, 41, 45);
+                    background-color: rgb(117, 117, 117);
+                    margin-right: 5px;
+                    @media (max-width: 767px) {
+                        width: 15px;
+                        height: 15px;
+                         }
+                    svg{
+                            font-size: 17px;
+                        margin: auto;
+                        text-align: center;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                             }
+                    }
+                }
+                &:last-child{
+                    padding-top: 3px;
+                    @media (max-width: 767px) {
+                    align-items: center;
+                         }
+                       
+                }
+            }
+            
+        }
+        }
+    }
+    }
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    background: black !important;
+    color: white !important;
+    min-height: none !important;
+    overflow-y: none !important;
+    max-height: none !important;
+}
+.css-159wgzx-MuiDivider-root {
+    border-color: rgb(117, 117, 117, .5)  !important;
+}
+
+a{
+    text-decoration: none;
+    color: white !important;
+
+    .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+        min-height: auto;
+  
+        &:hover{
+            background: rgb(117, 117, 117, .5)!important;
+        }
+    }
+}

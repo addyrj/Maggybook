@@ -1,0 +1,35 @@
+.gamecard{
+    height: 90px;
+    // min-height: 65px;
+    border: 1px solid rgb(170, 175, 181);
+    width: 30%;
+    border-radius: 2px;
+   
+    background: #282D31;
+    align-items: center;
+    padding: auto;
+    vertical-align: middle;
+    
+    .img-sec
+    {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: center;
+        img{
+            max-width: 90%;
+            height: 33px;
+
+        
+        }
+    }
+p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(170, 175, 181);
+}
+}

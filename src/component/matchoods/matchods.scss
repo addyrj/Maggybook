@@ -1,0 +1,149 @@
+@import "../../styles/variables/mixins";
+       
+.matchods-main {
+  width: 100%;
+  background-color: #2e3438;
+  padding-bottom: 10px;
+  .matchods {
+    color: #aaafb5;
+    gap: 7px;
+
+    display: flex;
+    align-items: center;
+display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0px 16px;
+    border-radius: 8px 8px 0px 0px;
+    min-height: 25px;
+    background-color: rgb(102, 102, 102);
+    @media (max-width: 767px) {
+      min-height: 15px;
+      margin: 0;
+      // justify-content: space-between;
+    }
+     .data{
+display: flex;
+justify-content: space-between;
+
+width: 98%;
+@media (max-width: 767px) {
+
+  padding: 8px 0;
+}
+.max-min{
+  display: none;
+  @media (max-width: 767px) {
+
+    display: inline-flex;
+  }
+}
+       p {
+         font-size: 14px;
+         @media (max-width: 767px) {
+
+          margin: auto 0;
+        }
+         &:last-child{
+          font-weight: 700;
+         }
+        }
+      
+      }
+  }
+  .lback {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    @media (max-width: 767px) {
+
+      display: none;
+    }
+    .layback-left {
+      width: 50%;
+
+    }
+    .lback-right {
+      width: 50%;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      p {
+        margin: 0px;
+        font-size: 12px;
+        width: 68px;
+        padding: 0px 10px;
+        color: rgb(170, 175, 181);
+        font-weight: 700;
+        text-align: center;
+      }
+      span {
+        padding: 0px 14px;
+        padding-bottom: 4px;
+        background: #5a8bad;
+        border-radius: 6px;
+        color: white;
+        &:nth-of-type(2) {
+          background: #b0728b;
+        }
+      }
+    }
+  }
+  .layback-all {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767px) {
+
+      flex-direction: column;
+      align-items: start;
+    }
+    .layback-left {
+      width: 40%;
+      padding: 0px 10px;
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0px 0px;
+              }
+      p {
+        color: rgb(170, 175, 181);
+        @media (max-width: 767px) {
+        margin: 0;
+        padding: 4px 0;
+                }
+      }
+    }
+    .layback-right {
+      width: 60%;
+
+      display: flex;
+      gap: 2px;
+      @media (max-width: 767px) {
+width: 100%;
+      }
+      .game {
+
+        box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 15.8333%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 15.8333%;
+    height: 38px;
+    border-radius: 4px;
+        p {
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 500;
+          &:nth-of-type(2) {
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}

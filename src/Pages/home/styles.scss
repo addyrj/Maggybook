@@ -1,0 +1,165 @@
+@import "../../styles/variables/mixins";
+.Exchange-sec {
+  width: 100%;
+  height: calc(600px - 45px);
+  overflow: hidden;
+  display: flex;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    
+}
+  .main-left-container {
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    @media (max-width: 767px) {
+      width: 100%;   
+  }
+  .hero-sec {
+    width: 100%;
+    height: 220px;
+    // background: green;
+    @media (max-width: 767px) {
+      height: 150px;
+      
+      
+  }
+    }
+   
+    .tabs {
+      background: rgb(46, 52, 56);
+      /* HorizontalScroll.css */
+
+      .horizontal-scroll-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        .scroll-content {
+          display: flex;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          flex-grow: 1;
+          &::-webkit-scrollbar {
+            //   width: 20px;
+            display: none;
+          }
+         
+          .item {
+            padding-inline: 20px;
+            padding-block: 5px;
+            white-space: nowrap;
+            cursor: pointer;
+            border-right: 1px solid rgb(64, 63, 63);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            @media (max-width: 767px) {
+              flex-direction: column;
+            }
+          }
+          .tab-name-icon{
+            svg{
+              font-size: 20px;
+              margin-right: 5px;
+              margin-top: 2px;
+            }
+          }
+        }
+        .scroll-button {
+          background: rgb(46, 52, 56);
+          border: none;
+          color: white;
+          padding-inline: 10px;
+          padding-block: 5px;
+          cursor: pointer;
+          font-size: 18px;
+        }
+              
+        .left {
+          border-right: 1px solid rgb(64, 63, 63);
+          @media (max-width: 767px) {
+            display: none;
+        }
+        }
+        
+
+        .right {
+          border-left: 1px solid rgb(64, 63, 63);
+          @media (max-width: 767px) {
+            display: none;
+        }
+        }
+      }
+      .games-col{
+        @media (max-width: 767px) {
+          height: 350px;
+          overflow-y: scroll;
+          &::-webkit- {
+            display: none;
+          }
+        }
+      } 
+     
+    }
+    .fantacy-sec{
+display: flex;
+flex-direction: column;
+text-align: center;
+h1{
+  font-size: 1.75rem;
+  padding: 16px 0;
+    font-weight: 700;
+    color: gray;
+    text-transform: capitalize;
+    margin: 0;
+    font-family:sans-serif;
+}
+      .fantacy-game{
+        width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+  padding: 10px 20px;
+  @media (max-width: 767px) {
+    padding: 5px 5px;
+
+  }
+
+
+    }
+  }
+  }
+  .main-right-container {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0.5%;
+    @media (max-width: 767px) {
+      display: none;
+  }
+    p {
+      text-transform: capitalize;
+     
+      font-weight: 900;
+      color: white;
+      margin: 0;
+      padding: 5px;
+      background-color: rgb(118, 46, 86);
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+    .game-slider {
+      background: black;
+      overflow: hidden;
+      width: 100%;
+      height: 600px;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@import "../../styles/variables/mixins";
+.fancy-main {
+    width: 100%;
+    background-color: #2e3438;
+    padding-bottom: 10px;
+    .fancy {
+      color: #aaafb5;
+      gap: 7px;
+  
+      display: flex;
+      align-items: center;
+  
+      cursor: pointer;
+      text-decoration: none;
+      padding: 0px 16px;
+      border-radius: 8px 8px 0px 0px;
+      min-height: 25px;
+      background-color: rgb(102, 102, 102);
+      p {
+        font-size: 14px;
+        @media (max-width: 767px) {
+          padding: 8px 0;
+          margin: 0;
+                  }
+      }
+    }
+    .container-fancy{
+width: calc(100% - 10px);
+margin: auto auto;
+
+    .fback{
+        width: 100%;
+        // background: red;
+        margin-bottom: 12px;
+        margin-top: 5px;
+        display: flex;
+        gap: 5px;
+        .fback-left{
+            width: 52%;
+            display: flex;
+            justify-content: end;
+            @media (max-width: 767px) {
+                width: 100%;
+             &:last-child{
+                display: none;
+             }
+         
+                    }
+
+            .fback-yes{
+                width: 48%;
+                // background: green;
+                display: flex;
+                gap: 5px;
+                span{
+                    width: 30%;
+                    background: #b0728b;
+                    text-align: center;
+                    border-radius: 2px;
+                    &:last-child{
+                    background: #5a8bad;
+                    }
+
+                }
+            }
+
+        }
+    }
+    .fanback-all{
+        width: 98%;
+        display: grid;
+       
+        gap: 5px;
+        margin: 2px auto;
+        padding-bottom: 10px;
+        grid-template-columns: repeat(2 , 1fr);
+        @media (max-width: 767px) {
+              grid-template-columns: repeat(1, 1fr);
+       
+                  }
+      
+        .fanback-left{
+            width: 100%;
+            display: flex;
+            border-bottom: 0.5px solid gray;
+            padding-bottom: 5px;
+          
+            .fanback-left-one{
+                width: 52%;
+              
+                p{
+                    font-size: 14px;
+                    padding: 0;
+                    margin: 0;
+                    align-items: center;
+                    color: rgb(170, 175, 181);
+                }
+            } 
+            .fanback-left-two{
+                width: 48%;
+            
+                display: flex;
+                align-items: center;
+                .game-option{
+                    width: 63%;
+                    display: flex;
+                    gap: 5px;
+                    .game{
+                        width: 49%;
+                        background-color: #72bbef;
+                        border-radius: 4px;
+                        &:first-child{
+                            background: #b0728b;
+                        }
+                        p{
+                            margin: 0;
+                            padding: 0;
+                            text-align: center;
+                            font-size: 13px;
+                            text-transform: capitalize;
+                            
+                            &:first-child{
+                                font-weight: 700;
+                            }
+                        }
+                        
+                    }
+                  
+                }
+                .game-t{
+                   
+                    p{
+                        margin: 0;
+                        font-size: 13px;
+                        padding: 0;
+                        color: rgb(170, 175, 181);
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+                }
+
+           }
+        }
+
+    }
+}
+
+
+  }
+  

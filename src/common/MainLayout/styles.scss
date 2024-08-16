@@ -1,0 +1,55 @@
+@import "../../styles/variables/mixins";
+.main-layout{
+   width: 100%;
+   overflow-y: none !important;
+   height: 100vh;
+//    scrollbar-width: none;
+   position: fixed;
+    .layout-nav-col{
+        width: 100%;
+        height: 30px;
+    }
+    .main-layout-col{
+        display:flex;
+        gap: 5px;
+        height: calc(100% - 30px);
+        background-color: #23292D;
+        @include mediaQuery(phone){
+            gap: 0px;
+            height: calc(100% - 0px);
+        }
+        .main-layout-sider{
+            width: 20%;
+            height: 100%;
+            transition: width 0.2s;
+            @media (max-width: 767px) {
+                width: 0%;
+                // height: 100%;
+
+               
+                
+            }
+        }
+        .main-layout-sider-active{
+            width: 100%;
+            position: fixed;
+            background-color: rgba(0,0,0,0.2);
+            height: 100%;
+            z-index: 111;
+            transition: width 0.2s;
+        }
+        .main-layout-content{
+            width: 80%;
+            height: 100%;
+            overflow-y:scroll ;
+            @media (max-width: 767px) {
+                width: 100%;
+               
+                
+            }
+            &::-webkit-scrollbar{
+                display: none;
+              }
+        }
+    }
+}

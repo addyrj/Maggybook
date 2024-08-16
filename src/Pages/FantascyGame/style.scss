@@ -1,0 +1,49 @@
+@import "../../styles/variables/mixins";
+
+.live-casino {
+    width: 97%;
+    // display: flex;
+    // background: red;
+    margin: 0 auto;
+
+    // background: red;
+    .fantacy-sec {
+      padding: 10px 0;
+      width: calc(100% - 0px);
+      .fantacy-game {
+        display: grid;
+        margin-top: 60px;
+        
+        
+    grid-template-columns: repeat(7 , 1fr);
+    
+    gap: 8px;
+        .active{
+          // color: rgb(253, 207, 19)!important;
+          border: 1px solid white !important;
+        }
+        @media (max-width: 767px) {
+          margin-top: 10px;
+          grid-template-columns: repeat(3 , 1fr);
+         
+          
+      }
+        .gamecard {
+          width: 100%;
+          height: auto;
+          border-radius: 0;
+          cursor: pointer;
+          padding-bottom: 2px;
+          .img-sec{
+            padding-top: 0px;
+            height: 40px;
+
+            img {
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+ 

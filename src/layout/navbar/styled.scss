@@ -1,0 +1,101 @@
+@import "../../styles/variables/mixins";
+.nav-main{
+    width: 100%;
+    background: #762e56;
+    @media (max-width: 767px) {
+     
+        background:transparent;
+        font-size: 8px;
+        width: calc(100% - 0px);
+        margin: 8px auto;
+        padding: 0 10px;
+          overflow-x: scroll;
+     }
+    .menu-list{
+        display: flex;
+        margin: 0%;
+        padding: 0%;
+justify-content: center;
+gap: 50px;
+align-items: center;
+@media (max-width: 767px) {
+    gap: 0px;
+    height: 40px;
+    width: 90%;
+    padding-left: 10px;
+    // margin: 0 5%;
+  
+}
+
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        cursor: pointer;
+        font-weight: 800;
+    color: white;
+    position: relative;
+    // padding-inline: 20px;
+    padding-block: 4px;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    @media (max-width: 767px) {
+     white-space: wrap;
+    font-weight: 600;
+    text-align: center;
+    height: 100%;
+    color: #dddddd;
+    background: #666666;
+    //  align-items: sta;
+    padding-block: 0;
+     padding-inline: 7px;
+     border-right: 1px solid rgb(153, 153, 153);
+     font-size: 14px;
+     &:nth-child(3){
+        background: #444444;
+     }
+     &:last-child{
+        border-right: none;
+        padding-right: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+     }
+     &:first-child{
+        border-right: none;
+        padding-left: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+     }
+         // display: none
+             
+         }
+        &:hover{
+            color: rgb(253, 207, 19)!important;
+        }
+    &::before{
+        position: absolute;
+        content: "";
+        left: -30px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        border-radius: 100px;
+        background-color: white;
+        transform: translateY(-50%);
+        @media (max-width: 767px) {
+     
+            width: 0px;
+            height: 0%;
+             // display: none
+                 
+             }
+    }
+    .active{
+        color: rgb(253, 207, 19)!important;
+        border-bottom: 2px solid rgb(253, 207, 19) !important;
+      
+    }
+}
+}
+}

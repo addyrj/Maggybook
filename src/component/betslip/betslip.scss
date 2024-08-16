@@ -1,0 +1,166 @@
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+  
+  :root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(255, 168, 175, 0.873);
+  }
+  
+  .main-betslip {
+    width: calc(100% - 20px);
+    margin: auto;
+  
+    .main-betslip-main {
+      width: 100%;
+  
+      h2 {
+        color: #aaafb5;
+        font-size: 15px;
+        padding: 10px 0;
+        margin: 0;
+      }
+    }
+  
+    .match-oods {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #aaafb5;
+      align-items: center;
+  
+      p {
+        font-size: 14px;
+      }
+  
+      svg {
+        font-size: 20px;
+      }
+    }
+  
+    .match-oods-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #aaafb5;
+      align-items: center;
+      border-bottom: 1px solid #aaafb5;
+  
+      p {
+        color: yellow;
+        font-size: 14px;
+      }
+  
+      input {
+        width: 30%;
+        padding: 10px 12px;
+        background-color: transparent;
+        border: 1px solid #aaafb5;
+        border-radius: 4px;
+        color: #aaafb5;
+        outline: none;
+  
+        &:focus {
+          border: 2px solid yellow;
+        }
+      }
+    }
+  
+    .amount {
+      padding: 10px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #aaafb5;
+      align-items: center;
+  
+      input {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 4px;
+        color: #aaafb5;
+        background: #23292d;
+        outline: none;
+        padding: 13px 10px;
+        border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+        animation: borderRotate var(--d) linear infinite forwards;
+      }
+  
+      .amount-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        span {
+          margin: 0;
+          padding: 0;
+          font-size: 12px;
+        }
+      }
+    }
+  
+    .amount-btn {
+      padding: 10px 0px;
+      width: 100%;
+      display: grid;
+      gap: 5px;
+      margin: 2px auto;
+      padding-bottom: 10px;
+      grid-template-columns: repeat(5, 1fr);
+  
+      input {
+        width: 100%;
+        color: white;
+        padding: 9px 0px;
+        background-color: #2a6457;
+        border: none;
+        border-radius: 4px;
+      }
+    }
+  
+    .betplace {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+  
+      input {
+        width: 100%;
+        color: #aaafb5;
+        background-color: #2a6457;
+        border: none;
+        padding: 10px 0px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @keyframes borderRotate {
+    100% {
+      --angle: 420deg;
+    }
+  }
+  

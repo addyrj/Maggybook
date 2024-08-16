@@ -1,0 +1,181 @@
+@import "../../styles/variables/mixins";
+@keyframes example {
+    0%   {left:-100%; top:0%;}
+    50%  {left:100%; top:0%;}
+    100% {left:-100%; top:0%;}
+    }
+.gamechart{
+    display: flex;
+    background: #23292D;
+    border-bottom: 1px solid gray;
+    padding: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+    
+    @media (max-width: 767px) {
+        flex-direction: column;
+        width: calc(100% - 5%);
+        gap: 5px;
+        // background: red;
+        // margin-bottom: 5px;
+        // width: 99%;
+background: rgb(102, 102, 102);
+        margin: 2px auto;
+        padding: 5px;
+    }
+    .game-col-left{
+        width: 60%;
+        // background: red;
+        display: flex;
+        padding: 16px 0;
+        font-weight: 500;
+        color: gray;
+        @media (max-width: 767px) {
+          width: 100%;  
+        //   border:5px solid #666666;
+          justify-content: space-between;
+          background: #2E3438;
+           
+        }
+        .day-live{
+            width: 20%;
+            // text-align: left;
+            // color: rgb(3, 179, 127);   
+            display: flex;
+            // flex-direction: column;  
+            .live{
+                // background: red;
+                width: 100%;
+                text-align: left;
+                color: rgb(3, 179, 127);   
+                display: flex;
+                flex-direction: column;   
+               .animate{
+                width: 30%;
+                height: 1px;
+                // background: yellow;
+                overflow: hidden;
+                position: relative;
+                
+                &::after{
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    background: rgb(3, 179, 127);  
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    animation: example 2s infinite;
+                    
+                }
+               
+            
+               }
+            }
+            .day{
+                // display: none;
+                span{
+
+                    color: gray;
+                }
+            }
+        }
+        .time{
+            width: 20%;
+            text-align: center;
+            // background: green;
+            @media (max-width: 767px) {
+               display: none;
+                 
+              }
+            span{
+                border-right: 1px solid gray;
+                padding-right: 15px;
+            }
+        }
+        .game{
+            width: 45%;
+            text-align: left;
+            @media (max-width: 767px) {
+               text-align: center;
+              }
+        }
+        .online{
+            width: 15%;
+            display: flex;
+            font-size: 14px;
+            // background: blue;
+            justify-content: left;
+            font-weight: 700;
+            
+            gap: 10px;
+            margin: auto 0;
+            span{
+                svg{
+                    font-size: 14px;
+                    @media (max-width: 767px) {
+                        align-items: end;
+                        width: auto;
+                        justify-content: right;
+                       }
+            
+                }
+            }
+        }
+    }
+
+    .game-col-right{
+        width: 40%;
+        font-weight: 700;
+      gap: 10px;
+        display: flex;
+       
+        @media (max-width: 767px) {
+            width: 100%;  
+            // border:5px solid #666666;
+            // padding: 5px; 
+            background: rgb(102, 102, 102);
+            // background: #666666; 
+          }
+        .game1{
+            width: 33.3%;
+       
+            gap: 5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            p{
+                height: 20px;
+                width: 49%;
+                margin: auto 0;
+                padding: 5px;
+                background-color: rgb(114, 187, 239);
+                &:last-child{
+                    background-color: rgb(249, 148, 186);
+                }
+            }
+        }
+        .game2{
+            width: 33.3%;
+       
+            gap: 5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            p{
+                height: 20px;
+                width: 49%;
+                margin: auto 0;
+              
+                padding: 5px;
+                color:rgb(102, 102, 102) ;
+                border: 1px solid rgb(102, 102, 102);
+                // background-color: rgb(46, 52, 56);
+                
+                @media (max-width: 767px) {
+                    background:   #2E3438; 
+                  }
+            }
+        }
+    }
+}

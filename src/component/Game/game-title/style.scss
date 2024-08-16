@@ -1,0 +1,31 @@
+@import "../../../styles/variables/mixins";
+.game-title{
+    display: flex;
+    padding-top: 10px;
+    color: white;
+    
+    @media (max-width: 767px) {
+      display: none;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .name{
+        display: flex;
+        width: 60%;
+        padding-left: 10px;
+        gap: 5px;
+
+    }
+    .rule{
+        width: 40%;
+        display: flex;
+        p{
+            width: 33.3%;
+            text-align: center;
+            padding-right: 7%;
+        }
+    }
+}
+
